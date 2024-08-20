@@ -1,0 +1,36 @@
+/* Container for the summary data */
+.summary-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    text-align: left;
+    align-items: center;
+}
+
+/* Label for the data fields */
+.label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* General styles for paragraphs */
+.summary-container p {
+    margin: 8px 0;
+}
+
+/* Specific styling for numeric data to distinguish it */
+.summary-container p span + span {
+    font-weight: normal;
+    color: #555;
+}
+
+/* Hover effect to emphasize the data */
+.summary-container p:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    padding: 5px;
+}

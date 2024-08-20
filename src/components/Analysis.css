@@ -1,0 +1,55 @@
+.analysis-container {
+    padding: 20px;
+    width: 100%; /* Full width of the parent container */
+  }
+  
+  .limit-form {
+    margin-bottom: 20px;
+  }
+  
+  .limit-input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .submit-button {
+    padding: 5px 10px;
+  }
+  
+  .analysis-table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse;
+  }
+  
+  .analysis-table th, .analysis-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .analysis-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .news-image {
+    width: 100px; /* Fixed width for images */
+    height: 60px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the area */
+  }
+  
+  .publisher-logo {
+    width: 50px; /* Fixed width for publisher logos */
+    height: 50px; /* Fixed height for publisher logos */
+     /* Ensure the logo covers the area */
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

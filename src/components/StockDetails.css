@@ -1,0 +1,54 @@
+.stock-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1cm;
+}
+
+.stock-price {
+    font-size: 2cm;
+    line-height: 2cm;
+    position: relative;
+    margin: 0;
+}
+
+.currency {
+    font-size: 1cm;
+    line-height: 1cm;
+    top: -1cm;
+    left: 0;
+}
+
+.price-change {
+    font-size: 0.5cm;
+    line-height: 0.5cm;
+    margin-top: 0.5cm;
+}
+
+.percentage-change {
+    margin-left: 0.2cm;
+}
+
+/* Green for positive changes, red for negative */
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+/* Style for previous close, high, and low prices */
+.stock-details p {
+    font-size: 0.7cm;
+    line-height: 0.7cm;
+    margin: 0.3cm 0;
+}
+
+/* Bold styling for the labels */
+.stock-details p:before {
+    font-weight: bold;
+    content: attr(data-label);
+    margin-right: 0.2cm;
+    color: #555;
+}
