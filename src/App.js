@@ -49,6 +49,7 @@ function App() {
 
   return (
     <div className="App">
+      <p>*You can fetch data only 4 to 5 times per minute as it is free version . If you are unable to see data refresh the page</p>
       <input type="text" onChange={changeStockName} value={stockName} />
       <button onClick={getStockName}>Submit</button>
       <StockDetails data={stockData} />
