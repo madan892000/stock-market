@@ -4,7 +4,6 @@ import Summary from './components/Summary';
 import Chart from './components/Chart';
 import Statistics from './components/Statistics';
 import Analysis from './components/Analysis';
-import Settings from "./components/Settings"
 import './App.css';
 
 function App() {
@@ -40,8 +39,6 @@ function App() {
         return <Statistics name={stockName}/>;
       case 'Analysis':
         return <Analysis name={stockName}/>;
-      case 'Settings':
-        return <Settings name={stockName}/>;
       default:
         return null;
     }
@@ -81,12 +78,6 @@ function App() {
           onClick={() => setSelectedFeature('Analysis')}
         >
           Analysis
-        </p>
-        <p 
-          className={`feature-item ${selectedFeature === 'Settings' ? 'active' : ''}`}
-          onClick={() => setSelectedFeature('Settings')}
-        >
-          Settings
         </p>
       </div>
 
