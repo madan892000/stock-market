@@ -33,15 +33,15 @@ function App() {
   const renderFeatureComponent = () => {
     switch (selectedFeature) {
       case 'Summary':
-        return <Summary data = {stockData} />;
+        return <Summary data={stockData} />;
       case 'Chart':
-        return <Chart name = {stockName}/>;
+        return <Chart name={stockName}/>;
       case 'Statistics':
-        return <Statistics name = {stockName}/>;
+        return <Statistics name={stockName}/>;
       case 'Analysis':
-        return <Analysis name = {stockName}/>;
+        return <Analysis name={stockName}/>;
       case 'Settings':
-        return <Settings name = {stockName}/>;
+        return <Settings name={stockName}/>;
       default:
         return null;
     }
@@ -49,7 +49,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>*You can fetch data only 4 to 5 times per minute as it is free version . If you are unable to see data refresh the page</p>
+      <div className="scrolling-news">
+        <p>*You can fetch data only 4 to 5 times per minute as it is free version. If you are unable to see data, refresh the page.</p>
+      </div>
+      <p>* Some suggested stocks to search : MSFT , GOOGL , AMZN , FB , TSLA , NVDA , INTC , ADBE , NFLX , PYPL.</p>
       <input type="text" onChange={changeStockName} value={stockName} />
       <button onClick={getStockName}>Submit</button>
       <StockDetails data={stockData} />
@@ -95,3 +98,4 @@ function App() {
 }
 
 export default App;
+

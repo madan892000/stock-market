@@ -3,8 +3,36 @@
   padding: 20px;
 }
 
+.scrolling-news {
+  width: 100%; /* Full width */
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  background-color: #f8f9fa; /* Light background */
+  padding: 10px 0; /* Padding for aesthetics */
+}
+
+.scrolling-news p {
+  display: inline-block;
+  padding-left: 50%; /* Reduce padding to start closer to the visible area */
+  animation: scroll 10s linear infinite; /* Reduce the duration for faster scrolling */
+  font-weight: bold;
+  color: red;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%); /* Start from the right */
+  }
+  to {
+    transform: translateX(-100%); /* End at the left */
+  }
+}
+
+
 input[type="text"] {
   padding: 10px;
+  margin-top: 10px;
   margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;

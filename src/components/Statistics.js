@@ -105,7 +105,7 @@ const Statistics = ({ name }) => {
                 <td>{dividend.ex_dividend_date || 'N/A'}</td>
                 <td>{dividend.record_date || 'N/A'}</td>
                 <td>{dividend.pay_date || 'N/A'}</td>
-                <td>{dividend.declared_date || 'N/A'}</td>
+                <td>{dividend.declaration_date || 'N/A'}</td>
                 <td>{dividend.cash_amount || 'N/A'}</td>
               </tr>
             ))}
